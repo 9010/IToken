@@ -6,16 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="itoken-admin" />
-        <module name="itoken-config" />
-        <module name="itoken-eureka" />
         <module name="itoken-zipkin" />
+        <module name="itoken-dependencies" />
+        <module name="itoken-eureka" />
+        <module name="itoken-admin" />
         <module name="itoken-zuul" />
+        <module name="itoken-config" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="itoken-admin" target="1.8" />
       <module name="itoken-config" target="1.8" />
+      <module name="itoken-dependencies" target="1.8" />
       <module name="itoken-eureka" target="1.8" />
       <module name="itoken-zipkin" target="1.8" />
       <module name="itoken-zuul" target="1.8" />
@@ -25,6 +27,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="itoken-admin" options="-parameters" />
       <module name="itoken-config" options="-parameters" />
+      <module name="itoken-dependencies" options="-parameters" />
       <module name="itoken-eureka" options="-parameters" />
       <module name="itoken-zipkin" options="-parameters" />
       <module name="itoken-zuul" options="-parameters" />
