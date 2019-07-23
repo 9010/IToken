@@ -11,7 +11,7 @@ spring:
       server:
         git:
           uri: https://github.com/9010/IToken.git
-          search-paths: blob/master/itoken-config/respo
+          search-paths: itoken-config/respo
           username: 1106690435@qq.com
           password: ZX199605116016zx
   zipkin:
