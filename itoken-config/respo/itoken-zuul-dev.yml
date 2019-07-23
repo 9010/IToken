@@ -1,24 +1,15 @@
 spring:
   application:
-    name: itoken-config
+    name: itoken-zuul
   boot:
     admin:
       client:
         url: http://localhost:8084
-  cloud:
-    config:
-      label: master
-      server:
-        git:
-          uri: http://git@github.com:9010/IToken.git
-          search-paths: itoken-config/respo
-          username: 1106690435@qq.com
-          password: ZX199605116016zx
   zipkin:
     base-url: http://localhost:9411
 
 server:
-  port: 8888
+  port: 8769
 
 eureka:
   client:
@@ -33,4 +24,3 @@ management:
     web:
       exposure:
         include: health,info
-
