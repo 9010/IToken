@@ -15,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="itoken-admin" target="1.8" />
       <module name="itoken-config" target="1.8" />
       <module name="itoken-dependencies" target="1.8" />
@@ -25,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
       <module name="itoken-admin" options="-parameters" />
       <module name="itoken-config" options="-parameters" />
       <module name="itoken-dependencies" options="-parameters" />

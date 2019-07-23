@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aef7880a-26d9-4f58-a621-2a0dfdefa4e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/itoken-config/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_54.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jzlib_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_4_11_0_201803080745_r.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_4_11_0_201803080745_r.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_2_0_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itoken-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-admin/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itoken-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itoken-config/respo/itoken-admin-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-config/respo/itoken-admin-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itoken-config/respo/itoken-eureka-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-config/respo/itoken-eureka-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itoken-config/respo/itoken-zipkin-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-config/respo/itoken-zipkin-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itoken-config/respo/itoken-zuul-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-config/respo/itoken-zuul-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itoken-config/src/main/java/cn/com/itoken/config/ItokenConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-config/src/main/java/cn/com/itoken/config/ItokenConfigApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itoken-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itoken-zipkin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-zipkin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itoken-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itoken-zuul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itoken-config/src/main/resources/application.yml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/itoken-eureka/target/" />
     <ignored path="$PROJECT_DIR$/itoken-zuul/target/" />
@@ -29,6 +15,7 @@
     <ignored path="$PROJECT_DIR$/itoken-config/target/" />
     <ignored path="$PROJECT_DIR$/itoken-zipkin/target/" />
     <ignored path="$PROJECT_DIR$/itoken-dependencies/target/" />
+    <ignored path="$PROJECT_DIR$/demo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,37 +42,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/itoken-config/respo/itoken-admin-dev.yml">
+        <entry file="file://$PROJECT_DIR$/itoken-config/src/main/java/cn/com/itoken/config/ItokenConfigApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/itoken-config/respo/itoken-eureka-dev.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            <state relative-caret-position="54">
+              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+              <folding>
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/itoken-config/respo/itoken-zuul-dev.yml">
+        <entry file="file://$PROJECT_DIR$/itoken-config/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="817">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/itoken-config/respo/itoken-zipkin-dev.yml">
+        <entry file="file://$PROJECT_DIR$/itoken-config/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="-20">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -111,9 +93,6 @@
         <option value="$PROJECT_DIR$/itoken-zuul/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/itoken-zuul/src/main/java/cn/com/itoken/zuul/ItokenZuulApplication.java" />
         <option value="$PROJECT_DIR$/itoken-config/repo/itoken-zuul-dev.yml" />
-        <option value="$PROJECT_DIR$/itoken-config/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/itoken-config/src/main/java/cn/com/itoken/config/ItokenConfigApplication.java" />
-        <option value="$PROJECT_DIR$/itoken-config/pom.xml" />
         <option value="$PROJECT_DIR$/itoken-admin/pom.xml" />
         <option value="$PROJECT_DIR$/itoken-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/itoken-zipkin/pom.xml" />
@@ -122,6 +101,9 @@
         <option value="$PROJECT_DIR$/itoken-config/respo/itoken-zipkin-dev.yml" />
         <option value="$PROJECT_DIR$/itoken-config/respo/itoken-admin-dev.yml" />
         <option value="$PROJECT_DIR$/itoken-config/respo/itoken-zuul-dev.yml" />
+        <option value="$PROJECT_DIR$/itoken-config/src/main/java/cn/com/itoken/config/ItokenConfigApplication.java" />
+        <option value="$PROJECT_DIR$/itoken-config/pom.xml" />
+        <option value="$PROJECT_DIR$/itoken-config/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -180,12 +162,6 @@
               <item name="IToken" type="b2602c69:ProjectViewProjectNode" />
               <item name="IToken" type="462c0819:PsiDirectoryNode" />
               <item name="itoken-config" type="462c0819:PsiDirectoryNode" />
-              <item name="respo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IToken" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IToken" type="462c0819:PsiDirectoryNode" />
-              <item name="itoken-config" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -220,6 +196,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="IToken" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IToken" type="462c0819:PsiDirectoryNode" />
+              <item name="itoken-dependencies" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -240,9 +221,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/itoken-config" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/itoken-config/src/main/resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -260,6 +249,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ItokenConfigApplication">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ItokenAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="itoken-admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.itoken.admin.ItokenAdminApplication" />
@@ -302,6 +298,7 @@
       <item itemvalue="Spring Boot.ItokenEurekaApplication" />
       <item itemvalue="Spring Boot.ItokenZipkinApplication" />
       <item itemvalue="Spring Boot.ItokenZuulApplication" />
+      <item itemvalue="Spring Boot.DemoApplication" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -315,7 +312,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563784849575</updated>
       <workItem from="1563784850860" duration="2893000" />
-      <workItem from="1563862823881" duration="4671000" />
+      <workItem from="1563862823881" duration="5669000" />
     </task>
     <task id="LOCAL-00001" summary="ini programme">
       <created>1563785197155</created>
@@ -373,11 +370,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563868341337</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="change main class and reload itoken-config">
+      <created>1563869519311</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563869519311</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7564000" />
+    <option name="totallyTimeSpent" value="8562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -436,7 +440,8 @@
     <MESSAGE value="config yml" />
     <MESSAGE value="change file name" />
     <MESSAGE value="fix path" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix path" />
+    <MESSAGE value="change main class and reload itoken-config" />
+    <option name="LAST_COMMIT_MESSAGE" value="change main class and reload itoken-config" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
@@ -536,27 +541,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/itoken-config/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itoken-config/src/main/java/cn/com/itoken/config/ItokenConfigApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/itoken-admin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="78" column="73" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itoken-config/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="74" column="75" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -620,5 +608,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" column="21" selection-start-line="21" selection-start-column="8" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itoken-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itoken-config/src/main/java/cn/com/itoken/config/ItokenConfigApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itoken-config/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (itoken-config)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27147767" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
