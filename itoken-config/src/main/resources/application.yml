@@ -1,15 +1,24 @@
 spring:
   application:
-    name: itoken-zipkin
+    name: itoken-config
   boot:
     admin:
       client:
         url: http://localhost:8084
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: http://192.168.75.128/itoken/itoken-config.git
+          search-paths: respo
+          username: topsale@vip.qq.com
+          password: 12345678
   zipkin:
     base-url: http://localhost:9411
 
 server:
-  port: 9411
+  port: 8888
 
 eureka:
   client:
@@ -24,7 +33,4 @@ management:
     web:
       exposure:
         include: health,info
-  metrics:
-    web:
-      server:
-        auto-time-requests: false
+
