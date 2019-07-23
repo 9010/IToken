@@ -72,7 +72,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.funtl.itoken.config.ConfigApplication</mainClass>
+                    <mainClass>cn.com.itoken.config.ItokenConfigApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

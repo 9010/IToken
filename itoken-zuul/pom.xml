@@ -76,7 +76,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.funtl.itoken.zuul.ZuulApplication</mainClass>
+                    <mainClass>cn.com.itoken.zuul.ItokenZuulApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

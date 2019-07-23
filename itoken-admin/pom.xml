@@ -76,7 +76,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.funtl.itoken.admin.AdminApplication</mainClass>
+                    <mainClass>cn.com.itoken.admin.ItokenAdminApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

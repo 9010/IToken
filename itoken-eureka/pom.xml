@@ -60,7 +60,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.funtl.itoken.eureka.EurekaApplication</mainClass>
+                    <mainClass>cn.com.itoken.eureka.ItokenEurekaApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
