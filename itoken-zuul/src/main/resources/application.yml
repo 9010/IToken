@@ -5,6 +5,3 @@ spring:
       name: itoken-zuul
       label: master
       profile: dev
-  main:
-    allow-bean-definition-overriding: true
-    # 当bean重复定义时允许相同key情况下beanDefinition实例的覆盖
