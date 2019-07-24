@@ -1,6 +1,12 @@
 spring:
   application:
     name: itoken-zipkin
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  zipkin:
+    base-url: http://localhost:9411
   main:
     allow-bean-definition-overriding: true
     # 当bean重复定义时允许相同key情况下beanDefinition实例的覆盖
@@ -9,12 +15,6 @@ spring:
     # could not be registered
     # A bean with that name has already been defined in class path resource
     # [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class] and overriding is disabled
-  boot:
-    admin:
-      client:
-        url: http://localhost:8084
-  zipkin:
-    base-url: http://localhost:9411
 
 server:
   port: 9411
