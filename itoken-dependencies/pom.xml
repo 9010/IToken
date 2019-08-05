@@ -14,6 +14,10 @@
 	<name>itoken-dependencies</name>
 	<description>itoken-dependencies</description>
 
+	<!--作为父依赖，打包方式需要为POM-->
+	<packaging>pom</packaging>
+
+
 	<properties>
 		<!-- Environment Settings -->
 		<java.version>1.8</java.version>
