@@ -10,7 +10,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class ItokenServiceAdminApplicationTests {
 
     @Test
-    public void contextLoads() {
+    public void login() {
+
     }
 
+    @Test
+    public void register() {
+
+    }
 }

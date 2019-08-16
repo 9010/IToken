@@ -29,7 +29,7 @@
 		<spring-boot-admin.version>2.1.6</spring-boot-admin.version>
 		<zipkin.version>2.10.1</zipkin.version>
 		<spring-boot-alibaba-durid.version>1.1.18</spring-boot-alibaba-durid.version>
-		<spring-boot-tk-mybatis.version>2.1.5</spring-boot-tk-mybatis.version>
+		<spring-boot-tk-mybatis.version>3.4.4</spring-boot-tk-mybatis.version>
 		<spring-boot-pagehelper.version>1.2.12</spring-boot-pagehelper.version>
 
 		<!-- Environment Settings -->

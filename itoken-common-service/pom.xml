@@ -23,6 +23,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${spring-boot-alibaba-durid.version}</version>
         </dependency>
         <dependency>
             <groupId>tk.mybatis</groupId>
@@ -64,7 +65,24 @@
             <artifactId>spring-boot-admin-starter-client</artifactId>
         </dependency>
         <!-- Spring Boot Admin End -->
+        <!-- Database Begin -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- Database End -->
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <version>3.4.4</version>
+        </dependency>
     </dependencies>
 
 </project>
