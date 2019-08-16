@@ -5,16 +5,19 @@ import cn.com.itoken.service.admin.mapper.TbSysUserMapper;
 import cn.com.itoken.service.admin.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 import tk.mybatis.mapper.entity.Example;
 
 @Service
+@Transactional(readOnly = true)
 public class AdminServiceImpl implements AdminService {
 
     @Autowired
     private TbSysUserMapper tbSysUserMapper;
 
     @Override
+    @Transactional(readOnly = false)
     public void register(TbSysUser tbSysUser) {
         tbSysUser.setPassword(DigestUtils.md5DigestAsHex(tbSysUser.getPassword().getBytes()));  //MD5加密
         tbSysUserMapper.insert(tbSysUser);
