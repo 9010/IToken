@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Date;
+import java.util.UUID;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ItokenServiceAdminApplicationTests {
@@ -19,14 +22,26 @@ public class ItokenServiceAdminApplicationTests {
     @Test
     public void register() {
         TbSysUser tbSysUser = new TbSysUser();
-        tbSysUser.setLoginCode("test");
+        tbSysUser.setUserCode(UUID.randomUUID().toString());
+        tbSysUser.setLoginCode("admin@test.com");
         tbSysUser.setPassword("123456");
+        tbSysUser.setUserName("admin");
+        tbSysUser.setUserType("0");
+        tbSysUser.setMgrType("1");
+        tbSysUser.setStatus("0");
+        tbSysUser.setCreateDate(new Date());
+        tbSysUser.setCreateBy(tbSysUser.getUserCode());
+        tbSysUser.setUpdateDate(new Date());
+        tbSysUser.setUpdateBy(tbSysUser.getUserCode());
+        tbSysUser.setCorpCode("0");
+        tbSysUser.setCorpName("Admin");
+
         adminService.register(tbSysUser);
     }
 
     @Test
     public void login() {
-        TbSysUser tbSysUser =  adminService.login("test", "123456");
+        TbSysUser tbSysUser =  adminService.login("admin@test.com", "123456");
         Assert.assertNotNull(tbSysUser);
     }
 
