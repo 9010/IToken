@@ -19,11 +19,18 @@
     </properties>
 
     <dependencies>
+        <!-- Project Begin -->
+        <dependency>
+            <groupId>cn.com.itoken.common</groupId>
+            <artifactId>itoken-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!-- Project End -->
+
         <!-- Spring Boot Begin -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <version>${spring-boot-alibaba-durid.version}</version>
         </dependency>
         <dependency>
             <groupId>tk.mybatis</groupId>
@@ -76,7 +83,6 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.version}</version>
         </dependency>
         <dependency>
             <groupId>tk.mybatis</groupId>
