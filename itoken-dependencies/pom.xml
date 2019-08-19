@@ -40,7 +40,7 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- Srping Boot Begin -->
+			<!-- Spring Boot Begin -->
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>druid-spring-boot-starter</artifactId>
@@ -56,7 +56,7 @@
 				<artifactId>pagehelper-spring-boot-starter</artifactId>
 				<version>${spring-boot-pagehelper.version}</version>
 			</dependency>
-			<!-- Srping Boot Begin -->
+			<!-- Spring Boot End -->
 
 			<!-- Spring Cloud Begin -->
 			<dependency>
@@ -113,7 +113,6 @@
 			</dependency>
 			<!-- Database End -->
 
-			<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
