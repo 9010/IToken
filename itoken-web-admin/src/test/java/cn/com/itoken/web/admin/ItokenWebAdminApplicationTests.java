@@ -1,4 +1,4 @@
-package cn.com.self.web.admin;
+package cn.com.itoken.web.admin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
