@@ -3,6 +3,7 @@ package cn.com.itoken.service.admin.controller;
 import cn.com.itoken.service.admin.domain.TbSysUser;
 import cn.com.itoken.service.admin.service.AdminService;
 import cn.com.self.itoken.common.dto.BaseResult;
+import com.google.common.collect.Lists;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,32 +27,34 @@ public class AdminController {
      */
     @RequestMapping(value = "login", method = RequestMethod.GET)
     public BaseResult login(String loginCode, String password){
+        BaseResult baseResult = checkLogin(loginCode, password);  //检查账号和密码是否为空
+        if(baseResult != null) return baseResult;
+
         TbSysUser tbSysUser = adminService.login(loginCode, password);
 
         if(tbSysUser != null){  //登录成功
             return BaseResult.ok(tbSysUser);
         }
         else {  //登录失败
-            return BaseResult.notOk();
+            return BaseResult.notOk(Lists.newArrayList(
+                    new BaseResult.Error("", "登录失败")
+            ));
         }
     }
 
-    private BaseResult checkLogin(String loginCode, String password){
+    /**
+     * 检查账号或密码是否为空
+     * @param loginCode
+     * @param password
+     * @return
+     */
+    private BaseResult checkLogin(String loginCode, String password){  //
         BaseResult baseResult = null;
-        List<BaseResult.Error> errors = new ArrayList<>();
 
-        if(StringUtils.isBlank(loginCode)){
-            BaseResult.Error error = new BaseResult.Error();
-            error.setField("loginCode");
-            error.setMessage("登录账号不能为空");
-            errors.add(error);
-        }
-
-        if(StringUtils.isBlank(password)){
-            BaseResult.Error error = new BaseResult.Error();
-            error.setField("password");
-            error.setMessage("登录密码不能为空");
-            errors.add(error);
+        if(StringUtils.isBlank(loginCode) || StringUtils.isBlank(password)){
+           baseResult = new BaseResult().notOk(Lists.newArrayList(
+                   new BaseResult.Error("loginError","账号或密码为空")
+           ));
         }
 
         return baseResult;

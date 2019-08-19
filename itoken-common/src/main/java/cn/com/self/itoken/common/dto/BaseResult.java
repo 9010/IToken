@@ -1,5 +1,6 @@
 package cn.com.self.itoken.common.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -58,6 +59,7 @@ public class BaseResult implements Serializable {
     }
 
     @Data
+    @AllArgsConstructor
     public static class Error{
         private String field;
         private String message;
