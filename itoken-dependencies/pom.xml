@@ -116,6 +116,7 @@
 			</dependency>
 			<!-- Database End -->
 
+			<!-- Other Start -->
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
@@ -136,6 +137,7 @@
 				<artifactId>jackson-databind</artifactId>
 				<version>${jackson.version}</version>
 			</dependency>
+			<!-- Other End -->
 		</dependencies>
 	</dependencyManagement>
 

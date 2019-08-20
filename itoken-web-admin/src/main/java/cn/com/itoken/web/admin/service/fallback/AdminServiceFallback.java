@@ -12,7 +12,7 @@ public class AdminServiceFallback implements AdminService {
     @Override
     public String login(String loginCode, String password) {
         BaseResult baseResult = BaseResult.notOk(Lists.newArrayList(new BaseResult.Error
-                ("502", "从上游服务器接收到无效相应")));
+                ("502", "从上游服务器接收到无效响应")));
         try {
             return MapperUtils.obj2json(baseResult);
         } catch (Exception e) {
