@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface AdminService {
 
     @RequestMapping(value = "login", method = RequestMethod.GET)
-    public String login(@RequestParam("loginCode") String loginCode, @RequestParam("password") String password);
+    public String login(@RequestParam(value = "loginCode") String loginCode, @RequestParam(value = "password") String password);
 }
