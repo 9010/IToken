@@ -18,6 +18,12 @@ spring:
       test-on-borrow: true
       # MySQL 8.x: com.mysql.cj.jdbc.Driver
       driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    cache: false #开发时关闭缓存，否则无法看到实时界面
+    mode: LEGACYHTML #非严格的HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
 
 server:
   port: 8503

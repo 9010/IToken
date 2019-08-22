@@ -21,7 +21,7 @@
     <dependencies>
         <!-- Project Begin -->
         <dependency>
-            <groupId>cn.com.itoken.common.web</groupId>
+            <groupId>cn.com.itoken.common</groupId>
             <artifactId>itoken-common-web</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

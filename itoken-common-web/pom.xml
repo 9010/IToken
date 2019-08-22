@@ -8,7 +8,7 @@
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../itoken-dependencies/pom.xml</relativePath>
     </parent>
-    <groupId>cn.com.itoken.common.web</groupId>
+    <groupId>cn.com.itoken.common</groupId>
     <artifactId>itoken-common-web</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>itoken-common-web</name>
