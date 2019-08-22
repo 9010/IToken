@@ -26,7 +26,7 @@ public class LoginServiceImpl implements LoginService {
         String json = redisService.get(loginCode);
 
         //用户信息不存在redis中
-        if(json == null){
+        if(json.equals("not_ok")){
             Example example = new Example(TbSysUser.class);
             example.createCriteria().andEqualTo("loginCode", loginCode);
 

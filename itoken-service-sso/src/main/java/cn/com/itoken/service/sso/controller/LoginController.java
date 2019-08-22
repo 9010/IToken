@@ -1,10 +1,12 @@
 package cn.com.itoken.service.sso.controller;
 
+import cn.com.itoken.common.domain.TbSysUser;
 import cn.com.itoken.service.sso.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class LoginController {
@@ -26,8 +28,11 @@ public class LoginController {
      * @param password
      * @return
      */
+    @ResponseBody
     @RequestMapping(value = "login", method = RequestMethod.POST)
     public String login(String loginCode, String password){
-        return null;
+        TbSysUser tbSysUser = loginService.login(loginCode, password);
+        System.out.println(tbSysUser.toString());
+        return "ok";
     }
 }

@@ -63,11 +63,6 @@ public class BaseResult implements Serializable {
     public static class Error{
         private String field;
         private String message;
-
-        public Error(String field, String message) {
-            this.field = field;
-            this.message = message;
-        }
     }
 
     public String getResult() {
