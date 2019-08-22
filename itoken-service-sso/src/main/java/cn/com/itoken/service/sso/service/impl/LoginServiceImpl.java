@@ -45,7 +45,7 @@ public class LoginServiceImpl implements LoginService {
                 }
                 return tbSysUser;
             }
-            else {
+            else {  //密码错误返回空
                 return null;
             }
         }
@@ -53,11 +53,12 @@ public class LoginServiceImpl implements LoginService {
         else {
             try {
                 tbSysUser = MapperUtils.json2pojo(json, TbSysUser.class);  //取出数据并返回
+                return tbSysUser;
             } catch (Exception e) {
                 logger.warn("触发熔断：{}", e.getMessage());
             }
         }
 
-        return tbSysUser;
+        return null; //意外错误
     }
 }
