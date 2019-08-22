@@ -32,7 +32,7 @@ public class LoginController {
     @RequestMapping(value = "login", method = RequestMethod.POST)
     public String login(String loginCode, String password){
         TbSysUser tbSysUser = loginService.login(loginCode, password);
-        System.out.println(tbSysUser.toString());
+        System.out.println(tbSysUser);
         return "ok";
     }
 }
