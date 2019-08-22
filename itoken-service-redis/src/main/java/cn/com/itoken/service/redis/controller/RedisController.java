@@ -15,17 +15,17 @@ public class RedisController {
     @RequestMapping(value = "put", method = RequestMethod.POST)
     public String put(String key, String value, long seconds){
         redisService.put(key, value, seconds);
-        return "ok";
+        return "ok";  //存入成功返回ok
     }
 
     @RequestMapping(value = "get", method = RequestMethod.GET)
     public String get(String key){
-        Object o = redisService.get(key);
+        Object o = redisService.get(key);  //取出数据
 
-        if(o != null){
+        if(o != null){  //存在则返回数据o
             String json = String.valueOf(o);
             return json;
         }
-        return "not_ok";
+        return "not_ok";  //失败返回not_ok
     }
 }
