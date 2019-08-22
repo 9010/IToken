@@ -21,8 +21,13 @@
     <dependencies>
         <dependency>
             <groupId>cn.com.itoken.common</groupId>
+            <artifactId>itoken-common-domain</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.com.itoken.common</groupId>
             <artifactId>itoken-common-service</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
