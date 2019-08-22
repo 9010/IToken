@@ -1,6 +1,6 @@
-package cn.com.itoken.web.admin.service.fallback;
+package cn.com.itoken.service.sso.service.consumer.fallback;
 
-import cn.com.itoken.web.admin.service.AdminService;
+import cn.com.itoken.service.sso.service.consumer.RedisService;
 import cn.com.self.itoken.common.constants.HttpStatusConstants;
 import cn.com.self.itoken.common.dto.BaseResult;
 import cn.com.self.itoken.common.hystrix.Fallback;
@@ -9,10 +9,14 @@ import com.google.common.collect.Lists;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AdminServiceFallback implements AdminService {
+public class RedisServiceFallback implements RedisService {
+    @Override
+    public String put(String key, String value, long seconds) {
+        return Fallback.badGateway();
+    }
 
     @Override
-    public String login(String loginCode, String password) {
+    public String get(String key) {
         return Fallback.badGateway();
     }
 }
