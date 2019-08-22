@@ -14,5 +14,5 @@ public interface RedisService {
      * 从redis获取数据
      * @param key
      */
-    public void get(String key);
+    public Object get(String key);
 }
