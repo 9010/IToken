@@ -1,6 +1,6 @@
 package cn.com.itoken.service.admin;
 
-import cn.com.itoken.service.admin.domain.TbSysUser;
+import cn.com.itoken.common.domain.TbSysUser;
 import cn.com.itoken.service.admin.service.AdminService;
 import org.junit.Assert;
 import org.junit.Test;

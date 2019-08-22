@@ -1,6 +1,6 @@
 package cn.com.itoken.service.admin.controller;
 
-import cn.com.itoken.service.admin.domain.TbSysUser;
+import cn.com.itoken.common.domain.TbSysUser;
 import cn.com.itoken.service.admin.service.AdminService;
 import cn.com.self.itoken.common.dto.BaseResult;
 import com.google.common.collect.Lists;
