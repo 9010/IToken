@@ -13,7 +13,12 @@
     </div>
 
     <div class="login-box-body">
-        <p class="login-box-msg">欢迎管理员登录</p>
+        <th:block th:if="${tbSysUser != null}">
+            <p class="login-box-msg">欢迎 <span th:text="${tbSysUser.userName}"></span> 登录</p>
+        </th:block>
+        <th:block th:if="${tbSysUser == null}">
+            <p class="login-box-msg">欢迎管理员登录</p>
+        </th:block>
 
         <form action="/login" method="post">
             <div class="alert alert-danger alert-dismissible" th:if="${message != null}">

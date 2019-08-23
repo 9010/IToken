@@ -4,6 +4,7 @@ import cn.com.itoken.common.domain.TbSysUser;
 import cn.com.itoken.service.sso.service.LoginService;
 import cn.com.itoken.service.sso.service.consumer.RedisService;
 import cn.com.self.itoken.common.utils.CookieUtils;
+import cn.com.self.itoken.common.utils.MapperUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,8 +34,32 @@ public class LoginController {
      * @return
      */
     @RequestMapping(value = "login", method = RequestMethod.GET)
-    public String login(HttpServletRequest request){
+    public String login(@RequestParam(required = false) String url,
+                        HttpServletRequest request, Model model){
         String token = CookieUtils.getCookieValue(request, "token");
+        //token不为空，可能已登录
+        if(StringUtils.isNotBlank(token)){
+            String loginCode = redisService.get(token);
+            if(StringUtils.isNotBlank(loginCode)){
+                String json = redisService.get(loginCode);
+                if(StringUtils.isNotBlank(json)){
+                    try {
+                        TbSysUser tbSysUser = MapperUtils.json2pojo(json, TbSysUser.class);
+                        if(tbSysUser != null){
+                            //如果存在url，重定向到url页面
+                            if(StringUtils.isNotBlank(url)){
+                                return "redirect:" + url;
+                            }
+                        }
+                        //没有url，将登录信息返回前端
+                        model.addAttribute("tbSysUser", tbSysUser);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
 
         return "login";
     }
