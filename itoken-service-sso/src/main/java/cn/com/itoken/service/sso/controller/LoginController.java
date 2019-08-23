@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
@@ -38,20 +39,21 @@ public class LoginController {
      * @param password
      * @return
      */
-    @ResponseBody
     @RequestMapping(value = "login", method = RequestMethod.POST)
-    public String login(String loginCode, String password, String url,
+    public String login(String loginCode, String password, @RequestParam(required = false) String url,
                         HttpServletRequest request, HttpServletResponse response){
         TbSysUser tbSysUser = loginService.login(loginCode, password);
 
         if(tbSysUser != null){
             String token = UUID.randomUUID().toString();
-            redisService.put(token, loginCode, 60 * 60 * 24);
-            CookieUtils.setCookie(request, response, "token", token);
-            return "redirect" + url;
+            String result = redisService.put(token, loginCode, 60 * 60 * 24);
+            if(request.equals("ok")){
+                CookieUtils.setCookie(request, response, "token", token);
+                return "redirect" + url;
+            }
+
         }
 
-        System.out.println(tbSysUser);
-        return "ok";
+        return "login";
     }
 }
