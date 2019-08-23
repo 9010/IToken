@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
@@ -31,7 +33,9 @@ public class LoginController {
      * @return
      */
     @RequestMapping(value = "login", method = RequestMethod.GET)
-    public String login(){
+    public String login(HttpServletRequest request){
+        String token = CookieUtils.getCookieValue(request, "token");
+
         return "login";
     }
 
@@ -44,28 +48,28 @@ public class LoginController {
     @RequestMapping(value = "login", method = RequestMethod.POST)
     public String login(String loginCode, String password, @RequestParam(required = false) String url,
                         HttpServletRequest request, HttpServletResponse response,
-                        Model model){
+                        RedirectAttributes redirectAttributes){
 
         TbSysUser tbSysUser = loginService.login(loginCode, password);
 
         if(tbSysUser == null) {
-            model.addAttribute("message", "用户名或密码错误，请重新输入");
+            redirectAttributes.addFlashAttribute("message", "用户名或密码错误，请重新输入");
         }
         else {
             String token = UUID.randomUUID().toString();
             String result = redisService.put(token, loginCode, 60 * 60 * 24);
             if(result.equals("ok")){
-                CookieUtils.setCookie(request, response, "token", token, 60 * 60 * 24);
+                CookieUtils.setCookie(request, response, "token", token, 60 * 60 * 24);  //token存入Cookie
                 if(StringUtils.isNotBlank(url)){
-                    return "redirect" + url;
+                    return "redirect:" + url;  //重定向页面
                 }
             }
 
             //熔断处理
             else {
-                model.addAttribute("message", "服务器异常，请稍后再试");
+                redirectAttributes.addFlashAttribute("message", "服务器异常，请稍后再试");
             }
         }
-        return "login";
+        return "redirect:/login"; //重定向至login页面，使用上方login方法
     }
 }
