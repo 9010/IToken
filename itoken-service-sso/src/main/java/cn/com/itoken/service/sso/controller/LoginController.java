@@ -54,10 +54,15 @@ public class LoginController {
             String token = UUID.randomUUID().toString();
             String result = redisService.put(token, loginCode, 60 * 60 * 24);
             if(request.equals("ok")){
-                CookieUtils.setCookie(request, response, "token", token);
+                CookieUtils.setCookie(request, response, "token", token, 60 * 60 * 24);
                 if(StringUtils.isNotBlank(url)){
                     return "redirect" + url;
                 }
+            }
+
+            //熔断处理
+            else {
+                model.addAttribute("message", "服务器异常，请稍后再试");
             }
         }
         return "login";
