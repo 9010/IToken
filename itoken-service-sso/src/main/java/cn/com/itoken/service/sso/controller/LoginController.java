@@ -45,6 +45,7 @@ public class LoginController {
     public String login(String loginCode, String password, @RequestParam(required = false) String url,
                         HttpServletRequest request, HttpServletResponse response,
                         Model model){
+
         TbSysUser tbSysUser = loginService.login(loginCode, password);
 
         if(tbSysUser == null) {
@@ -53,7 +54,7 @@ public class LoginController {
         else {
             String token = UUID.randomUUID().toString();
             String result = redisService.put(token, loginCode, 60 * 60 * 24);
-            if(request.equals("ok")){
+            if(result.equals("ok")){
                 CookieUtils.setCookie(request, response, "token", token, 60 * 60 * 24);
                 if(StringUtils.isNotBlank(url)){
                     return "redirect" + url;
