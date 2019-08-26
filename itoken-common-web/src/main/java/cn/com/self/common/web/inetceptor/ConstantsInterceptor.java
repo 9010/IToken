@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServletResponse;
  * 初始化常量拦截器
  */
 public class ConstantsInterceptor implements HandlerInterceptor {
+    private static final String HOST_CDN = "localhost:";
 
+    private static final String TEMPLATE_ADMIN_LTE = "adminlte/v2.4.3";
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -19,7 +21,9 @@ public class ConstantsInterceptor implements HandlerInterceptor {
 
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-
+        if(modelAndView != null){
+            modelAndView.addObject("adminlte", HOST_CDN +"/" + TEMPLATE_ADMIN_LTE);
+        }
     }
 
     @Override
