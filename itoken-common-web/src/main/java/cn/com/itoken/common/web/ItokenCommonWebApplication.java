@@ -1,4 +1,4 @@
-package cn.com.self.common.web;
+package cn.com.itoken.common.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

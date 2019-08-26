@@ -1,4 +1,4 @@
-package cn.com.self.common.web.inetceptor;
+package cn.com.itoken.common.web.inetceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;

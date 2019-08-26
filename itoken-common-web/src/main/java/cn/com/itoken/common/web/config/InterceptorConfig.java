@@ -1,6 +1,6 @@
-package cn.com.self.common.web.config;
+package cn.com.itoken.common.web.config;
 
-import cn.com.self.common.web.inetceptor.ConstantsInterceptor;
+import cn.com.itoken.common.web.inetceptor.ConstantsInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
