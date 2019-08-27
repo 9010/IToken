@@ -1,4 +1,4 @@
-package cn.com.self.common.web.inetceptor;
+package cn.com.itoken.common.web.inetceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -16,7 +16,7 @@ public class ConstantsInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        return false;
+        return true;
     }
 
     @Override
