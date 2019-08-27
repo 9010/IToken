@@ -1,6 +1,6 @@
 package cn.com.itoken.service.sso.service;
 
-import cn.com.itoken.common.domain.TbSysUser;
+import cn.com.itoken.common.service.domain.TbSysUser;
 
 /**
  * 登录业务sso

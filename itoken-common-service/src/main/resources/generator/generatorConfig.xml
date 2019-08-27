@@ -25,7 +25,7 @@
         </jdbcConnection>
 
         <!-- 配置实体类存放路径 -->
-        <javaModelGenerator targetPackage="cn.com.itoken.common.domain" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="cn.com.itoken.common.service.domain" targetProject="src/main/java"/>
 
         <!-- 配置 XML 存放路径 -->
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
@@ -43,7 +43,7 @@
         </table>
 
         <!-- itoken-service-post -->
-        <table catalog="itoken-service-post" tableName="tb_posts_post">
+        <table catalog="itoken-service-posts" tableName="tb_posts_post">
             <!-- mysql 配置 -->
             <generatedKey column="post_guid" sqlStatement="Mysql" identity="false"/>
         </table>

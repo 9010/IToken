@@ -1,6 +1,6 @@
 package cn.com.itoken.web.admin.interceptor;
 
-import cn.com.itoken.common.domain.TbSysUser;
+import cn.com.itoken.common.service.domain.TbSysUser;
 import cn.com.itoken.web.admin.service.RedisService;
 import cn.com.self.itoken.common.utils.CookieUtils;
 import cn.com.self.itoken.common.utils.MapperUtils;

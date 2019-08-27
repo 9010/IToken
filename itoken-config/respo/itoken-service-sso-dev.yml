@@ -33,7 +33,7 @@ feign:
     enabled: true
 
 mybatis:
-  type-aliases-package: cn.com.itoken.common.domain
+  type-aliases-package: cn.com.itoken.common.service.domain
   mapper-locations: classpath:mapper/*.xml
 
 eureka:

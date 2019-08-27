@@ -1,6 +1,6 @@
 package cn.com.itoken.service.sso.controller;
 
-import cn.com.itoken.common.domain.TbSysUser;
+import cn.com.itoken.common.service.domain.TbSysUser;
 import cn.com.itoken.service.sso.service.LoginService;
 import cn.com.itoken.service.sso.service.consumer.RedisService;
 import cn.com.self.itoken.common.utils.CookieUtils;

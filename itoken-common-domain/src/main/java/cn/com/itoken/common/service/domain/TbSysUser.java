@@ -1,4 +1,4 @@
-package cn.com.itoken.common.domain;
+package cn.com.itoken.common.service.domain;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

@@ -1,6 +1,6 @@
 package cn.com.itoken.service.sso.service.impl;
 
-import cn.com.itoken.common.domain.TbSysUser;
+import cn.com.itoken.common.service.domain.TbSysUser;
 import cn.com.itoken.service.sso.mapper.TbSysUserMapper;
 import cn.com.itoken.service.sso.service.LoginService;
 import cn.com.itoken.service.sso.service.consumer.RedisService;
