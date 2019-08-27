@@ -58,6 +58,9 @@ public class LoginController {
             }
         }
 
+        if(StringUtils.isNotBlank(url)){
+            model.addAttribute("url", url);
+        }
 
         return "login";
     }
