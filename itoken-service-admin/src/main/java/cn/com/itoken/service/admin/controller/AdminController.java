@@ -16,44 +16,4 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
-    /**
-     * 登录
-     * @param loginCode
-     * @param password
-     * @return
-     */
-    @RequestMapping(value = "login", method = RequestMethod.GET)
-    public BaseResult login(String loginCode, String password){
-        BaseResult baseResult = checkLogin(loginCode, password);  //检查账号和密码是否为空
-        if(baseResult != null) return baseResult;
-
-        TbSysUser tbSysUser = adminService.login(loginCode, password);
-
-        if(tbSysUser != null){  //登录成功
-            return BaseResult.ok(tbSysUser);
-        }
-        else {  //登录失败
-            return BaseResult.notOk(Lists.newArrayList(
-                    new BaseResult.Error("", "登录失败")
-            ));
-        }
-    }
-
-    /**
-     * 检查账号或密码是否为空
-     * @param loginCode
-     * @param password
-     * @return
-     */
-    private BaseResult checkLogin(String loginCode, String password){  //
-        BaseResult baseResult = null;
-
-        if(StringUtils.isBlank(loginCode) || StringUtils.isBlank(password)){
-           baseResult = new BaseResult().notOk(Lists.newArrayList(
-                   new BaseResult.Error("loginError","账号或密码为空")
-           ));
-        }
-
-        return baseResult;
-    }
 }
