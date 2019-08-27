@@ -103,12 +103,18 @@ public class LoginController {
      * 注销
      * @param request
      * @param response
+     * @param url
+     * @param model
      * @return
      */
     @RequestMapping(value = "logout", method = RequestMethod.GET)
     public String logout(HttpServletRequest request, HttpServletResponse response,
                          @RequestParam(required = false) String url,  Model model){
-        CookieUtils.deleteCookie(request, response, "token");
+        try {
+            CookieUtils.deleteCookie(request, response, "token");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return login(url, request, model);
     }
