@@ -98,4 +98,18 @@ public class LoginController {
         }
         return "redirect:/login"; //重定向至login页面，使用上方login方法
     }
+
+    /**
+     * 注销
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping(value = "logout", method = RequestMethod.GET)
+    public String logout(HttpServletRequest request, HttpServletResponse response,
+                         @RequestParam(required = false) String url,  Model model){
+        CookieUtils.deleteCookie(request, response, "token");
+
+        return login(url, request, model);
+    }
 }
