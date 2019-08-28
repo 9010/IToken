@@ -7,6 +7,9 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Date;
+
 @Service
 public class BaseServiceImpl<T extends BaseDomain, D extends MyMapper<T>> implements BaseService<T> {
 
@@ -14,7 +17,9 @@ public class BaseServiceImpl<T extends BaseDomain, D extends MyMapper<T>> implem
     private D dao;
 
     @Override
-    public int insert(T t) {
+    public int insert(T t, String createBy) {
+        t.setCreateBy(createBy);
+        t.setCreateDate(new Date());
         return dao.insert(t);
     }
 
@@ -24,7 +29,9 @@ public class BaseServiceImpl<T extends BaseDomain, D extends MyMapper<T>> implem
     }
 
     @Override
-    public int update(T t) {
+    public int update(T t ,String updateBy) {
+        t.setUpdateBy(updateBy);
+        t.setUpdateDate(new Date());
         return dao.updateByPrimaryKey(t);
     }
 
