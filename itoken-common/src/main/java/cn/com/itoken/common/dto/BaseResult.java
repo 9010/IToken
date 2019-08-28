@@ -27,6 +27,10 @@ public class BaseResult implements Serializable {
         return createBaseResult(RESULT_OK, data, null, SUCCESS, null);
     }
 
+    public static BaseResult ok(Object data, Cursor cursor){
+        return createBaseResult(RESULT_OK, data, cursor, SUCCESS, null);
+    }
+
     public static BaseResult notOk(List<BaseResult.Error> errors){
         return createBaseResult(RESULT_NOT_OK, null, null, FAIL, errors);
     }

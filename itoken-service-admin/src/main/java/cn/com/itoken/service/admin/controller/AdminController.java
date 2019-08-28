@@ -26,6 +26,12 @@ public class AdminController {
         //结果集
         List<TbSysUser> list = pageInfo.getList();
 
-        return BaseResult.ok(list);
+        //封装Cursor
+        BaseResult.Cursor cursor = new BaseResult.Cursor();
+        cursor.setTotal(new Long(pageInfo.getTotal()).intValue());
+        cursor.setOffset(pageInfo.getPageNum());
+        cursor.setLimit(pageInfo.getPageSize());
+
+        return BaseResult.ok(list, cursor);
     }
 }
