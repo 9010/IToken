@@ -1,4 +1,4 @@
-package cn.com.self.itoken.common.constants;
+package cn.com.itoken.common.constants;
 
 /**
  * http状态码

@@ -1,11 +1,7 @@
 package cn.com.itoken.service.sso.service.consumer.fallback;
 
 import cn.com.itoken.service.sso.service.consumer.RedisService;
-import cn.com.self.itoken.common.constants.HttpStatusConstants;
-import cn.com.self.itoken.common.dto.BaseResult;
-import cn.com.self.itoken.common.hystrix.Fallback;
-import cn.com.self.itoken.common.utils.MapperUtils;
-import com.google.common.collect.Lists;
+import cn.com.itoken.common.hystrix.Fallback;
 import org.springframework.stereotype.Component;
 
 @Component

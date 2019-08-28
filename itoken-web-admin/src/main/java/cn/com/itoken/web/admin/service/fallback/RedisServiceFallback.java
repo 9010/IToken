@@ -1,7 +1,7 @@
 package cn.com.itoken.web.admin.service.fallback;
 
 import cn.com.itoken.web.admin.service.RedisService;
-import cn.com.self.itoken.common.hystrix.Fallback;
+import cn.com.itoken.common.hystrix.Fallback;
 import org.springframework.stereotype.Component;
 
 @Component

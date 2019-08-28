@@ -2,8 +2,8 @@ package cn.com.itoken.web.admin.interceptor;
 
 import cn.com.itoken.common.service.domain.TbSysUser;
 import cn.com.itoken.web.admin.service.RedisService;
-import cn.com.self.itoken.common.utils.CookieUtils;
-import cn.com.self.itoken.common.utils.MapperUtils;
+import cn.com.itoken.common.utils.CookieUtils;
+import cn.com.itoken.common.utils.MapperUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.HandlerInterceptor;

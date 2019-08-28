@@ -4,7 +4,7 @@ import cn.com.itoken.common.service.domain.TbSysUser;
 import cn.com.itoken.service.sso.mapper.TbSysUserMapper;
 import cn.com.itoken.service.sso.service.LoginService;
 import cn.com.itoken.service.sso.service.consumer.RedisService;
-import cn.com.self.itoken.common.utils.MapperUtils;
+import cn.com.itoken.common.utils.MapperUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

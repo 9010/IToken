@@ -1,4 +1,4 @@
-package cn.com.self.itoken.common.dto;
+package cn.com.itoken.common.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

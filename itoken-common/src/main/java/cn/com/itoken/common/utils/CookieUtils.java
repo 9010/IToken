@@ -1,4 +1,4 @@
-package cn.com.self.itoken.common.utils;
+package cn.com.itoken.common.utils;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

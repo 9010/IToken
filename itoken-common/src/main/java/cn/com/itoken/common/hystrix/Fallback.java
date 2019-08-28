@@ -1,8 +1,8 @@
-package cn.com.self.itoken.common.hystrix;
+package cn.com.itoken.common.hystrix;
 
-import cn.com.self.itoken.common.constants.HttpStatusConstants;
-import cn.com.self.itoken.common.dto.BaseResult;
-import cn.com.self.itoken.common.utils.MapperUtils;
+import cn.com.itoken.common.constants.HttpStatusConstants;
+import cn.com.itoken.common.dto.BaseResult;
+import cn.com.itoken.common.utils.MapperUtils;
 import com.google.common.collect.Lists;
 
 /**
