@@ -47,6 +47,7 @@ public class BaseServiceImpl<T extends BaseDomain, D extends MyMapper<T>> implem
 
     @Override
     public T select(T t) {
+        //会根据参数t中存在的属性，去匹配查询数据
         return dao.selectOne(t);
     }
 
