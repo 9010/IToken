@@ -1,11 +1,15 @@
 package cn.com.itoken.common.service.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Table(name = "tb_posts_post", schema = "`itoken-service-posts`")  //数据库名称带有“-”必须使用 ` 包裹
-public class TbPostsPost extends BaseDomain{
+public class TbPostsPost extends BaseDomain implements Serializable {
+    //序列号
+    private static final long serialVersionUID = -7877708292255856129L;
+
     /**
      * 文章编码
      */

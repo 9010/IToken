@@ -1,11 +1,15 @@
 package cn.com.itoken.common.service.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Table(name = "tb_sys_user", schema = "`itoken-service-admin`")
-public class TbSysUser extends BaseDomain{
+public class TbSysUser extends BaseDomain implements Serializable {
+    //序列号
+    private static final long serialVersionUID = 5943587947388002428L;
+
     /**
      * 用户编码
      */
