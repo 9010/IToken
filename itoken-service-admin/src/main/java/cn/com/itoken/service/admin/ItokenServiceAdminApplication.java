@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import tk.mybatis.spring.annotation.MapperScan;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "cn.com.itoken")
 @EnableEurekaClient
 @MapperScan(basePackages = {"cn.com.itoken.common.service.mapper", "cn.com.itoken.service.admin.mapper"})
 public class ItokenServiceAdminApplication {
