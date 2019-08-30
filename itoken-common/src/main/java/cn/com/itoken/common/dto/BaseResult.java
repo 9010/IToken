@@ -23,6 +23,10 @@ public class BaseResult implements Serializable {
         return createBaseResult(RESULT_OK, null, null, SUCCESS, null);
     }
 
+    public static BaseResult ok(String success){
+        return createBaseResult(RESULT_OK, null, null, success, null);
+    }
+
     public static BaseResult ok(Object data){
         return createBaseResult(RESULT_OK, data, null, SUCCESS, null);
     }
