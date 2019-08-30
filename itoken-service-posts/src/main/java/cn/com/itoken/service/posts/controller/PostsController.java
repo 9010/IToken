@@ -20,7 +20,7 @@ public class PostsController {
     private PostsService<TbPostsPost> postsService;
 
     /**
-     * 根据id获取文件
+     * 根据id获取文章
      * @param postGuid
      * @return
      */
@@ -35,7 +35,7 @@ public class PostsController {
     }
 
     /**
-     * 保存文件
+     * 保存文章
      * @param tbPostsPostJson
      * @param optsBy
      * @return
@@ -74,7 +74,7 @@ public class PostsController {
     }
 
     /**
-     * 获取分页内容
+     * 分页查询文章
      * @param pageNum
      * @param pageSize
      * @param tbPostsPostJson
