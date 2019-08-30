@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Table(name = "tb_sys_user")
+@Table(name = "tb_sys_user", schema = "`itoken-service-admin`")
 public class TbSysUser extends BaseDomain{
     /**
      * 用户编码

@@ -2,7 +2,6 @@ package cn.com.itoken.service.posts.controller;
 
 import cn.com.itoken.common.dto.BaseResult;
 import cn.com.itoken.common.service.domain.TbPostsPost;
-import cn.com.itoken.common.service.domain.TbSysUser;
 import cn.com.itoken.common.utils.MapperUtils;
 import cn.com.itoken.service.posts.service.PostsService;
 import com.github.pagehelper.PageInfo;

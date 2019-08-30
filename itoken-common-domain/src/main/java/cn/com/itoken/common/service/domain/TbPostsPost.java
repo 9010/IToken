@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Table(name = "itoken-service-posts..tb_posts_post")
+@Table(name = "tb_posts_post", schema = "`itoken-service-posts`")  //数据库名称带有“-”必须使用 ` 包裹
 public class TbPostsPost extends BaseDomain{
     /**
      * 文章编码
