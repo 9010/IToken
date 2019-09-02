@@ -1,5 +1,7 @@
 package cn.com.itoken.common.web.utils;
 
+import org.apache.commons.lang.StringUtils;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.Iterator;
 import java.util.Map;
@@ -35,7 +37,9 @@ public class HttpServletUtils {
 
         String string = sb.toString();
         // 拼接 URL, URL?key=value&key=value& 并且去掉最后一个 &
-        url = url + "?" + string.substring(0, string.lastIndexOf("&"));
+        if(StringUtils.isNotBlank(string)) {
+            url = url + "?" + string.substring(0, string.lastIndexOf("&"));
+        }
         return url;
     }
 }
