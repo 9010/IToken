@@ -44,7 +44,7 @@ public class WebAdminInterceptor implements HandlerInterceptor {
         //已登录
         if(tbSysUser != null){
             if(modelAndView != null){
-                modelAndView.addObject("tbSysUser", tbSysUser);
+                modelAndView.addObject("admin", tbSysUser);
             }
         }
 
