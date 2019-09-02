@@ -38,8 +38,6 @@ public class WebPostsInterceptor implements HandlerInterceptor {
             }
             return false;
         }
-
-
         return true;
     }
 
