@@ -22,7 +22,7 @@ public class WebPostsInterceptor implements HandlerInterceptor {
     @Autowired
     private RedisService redisService;
 
-    @Value(value = "{hosts.sso}")
+    @Value(value = "${hosts.sso}")
     private String hosts_sso;
 
     @Override
