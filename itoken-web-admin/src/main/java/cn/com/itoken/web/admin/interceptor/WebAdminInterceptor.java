@@ -60,9 +60,9 @@ public class WebAdminInterceptor implements HandlerInterceptor {
                             //已登录，创建局部会话
                             tbSysUser = MapperUtils.json2pojo(json, TbSysUser.class);
                             if(modelAndView != null){
-                                modelAndView.addObject("tbSysUser", tbSysUser);
+                                modelAndView.addObject("admin", tbSysUser);
                             }
-                            session.setAttribute("tbSysUser", tbSysUser);
+                            session.setAttribute("admin", tbSysUser);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
