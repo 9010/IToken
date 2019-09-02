@@ -98,6 +98,18 @@
             <version>2.1.3.RELEASE</version>
         </dependency>
         <!-- Redis End -->
+
+        <!-- Swagger2 Begin -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+        <!-- Swagger2 End -->
+
     </dependencies>
 
 
