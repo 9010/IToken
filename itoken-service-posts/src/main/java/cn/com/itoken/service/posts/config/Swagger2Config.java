@@ -24,7 +24,9 @@ public class Swagger2Config {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("iToken API 文档")
-                .description("iToken API 网关接口")
+                .description(
+                        "服务名：Itoken-service-posts\r\n "+ "请求地址：http://localhost:8504"
+                )
                 .termsOfServiceUrl("http://localhost")
                 .version("1.0.0")
                 .build();
