@@ -2,6 +2,6 @@ spring:
   cloud:
     config:
       uri: http://192.168.75.137:8888
-      name: itoken-web-posts
+      name: itoken-web-posts, itoken-common-hosts
       label: master
       profile: prod
