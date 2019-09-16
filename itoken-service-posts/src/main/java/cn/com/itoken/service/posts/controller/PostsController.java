@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "v1/posts")
@@ -61,6 +62,7 @@ public class PostsController {
         if(tbPostsPost1 != null){
             //判断主键是否为空，为空则为新增，否则为修改
             if(StringUtils.isBlank(tbPostsPost1.getPostGuid())){
+                tbPostsPost1.setPostGuid(UUID.randomUUID().toString());
                 postsService.insert(tbPostsPost1, optsBy);
             }
 
