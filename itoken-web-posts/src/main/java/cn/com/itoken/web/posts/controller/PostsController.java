@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 import java.util.UUID;
 
 @Controller
@@ -39,10 +40,10 @@ public class PostsController extends BaseController<TbPostsPost, PostsService> {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
 
-        if(tbPostsPost == null){
-            tbPostsPost = new TbPostsPost();
+            if(tbPostsPost == null){
+                tbPostsPost = new TbPostsPost();
+            }
         }
 
         return tbPostsPost;
@@ -55,6 +56,9 @@ public class PostsController extends BaseController<TbPostsPost, PostsService> {
 
     @RequestMapping(value = "save", method = RequestMethod.POST)
     public String save(TbPostsPost tbPostsPost, HttpServletRequest request, RedirectAttributes redirectAttributes) throws Exception{
+        //初始化
+        tbPostsPost.setTimePublished(new Date());
+        tbPostsPost.setStatus("0");
 
         TbSysUser admin = (TbSysUser) request.getSession().getAttribute(WebConstants.SESSION_USER);
 

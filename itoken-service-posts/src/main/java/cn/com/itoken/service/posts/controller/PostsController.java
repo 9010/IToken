@@ -63,11 +63,11 @@ public class PostsController {
             //判断主键是否为空，为空则为新增，否则为修改
             if(StringUtils.isBlank(tbPostsPost1.getPostGuid())){
                 tbPostsPost1.setPostGuid(UUID.randomUUID().toString());
-                postsService.insert(tbPostsPost1, optsBy);
+                result = postsService.insert(tbPostsPost1, optsBy);
             }
 
             else{
-                postsService.update(tbPostsPost1, optsBy);
+                result = postsService.update(tbPostsPost1, optsBy);
             }
 
             if(result > 0){
