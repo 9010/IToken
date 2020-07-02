@@ -34,7 +34,7 @@
 		<tk-mybatis-mapper.version>3.4.4</tk-mybatis-mapper.version>
 
 		<!-- Other Settings -->
-		<mysql.version>5.1.46</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<lombok.version>1.18.8</lombok.version>
 		<guava.version>27.0.1-jre</guava.version>
 		<nekohtml.version>1.9.22</nekohtml.version>
